@@ -29,6 +29,7 @@ service vendor.ipacm /system/vendor/bin/ipacm
     class main
     user radio
     group radio inet
+    writepid /dev/cpuset/system-background/tasks
 
 # msm specific files that need to be created on /data
 on post-fs-data
